@@ -1,0 +1,88 @@
+<div id="login-container" class="d-flex justify-content-center">
+    <div id="login-form" class="w-25 mt-5">
+        <h1 class="text-center">New Patient</h1>
+        <div id="add-fistname-label" class="w-100 mt-3">
+            First name
+        </div>
+        <div id="add-firstname-input">
+            <input [(ngModel)] = "user.firstname" class="form-control w-100 mt-1" type="text">
+        </div>
+        <div id="add-lastname-label" class="w-100 mt-3">
+            Last name
+        </div>
+        <div id="add-lastname-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.lastname"class="form-control" type="text">
+        </div>
+        <div id="add-hospitalId-label" class="w-100 mt-3">
+            HospitalId
+        </div>
+        <div id="add-hospitalId-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.hospitalId" class="form-control" type="text">
+        </div>
+        <div id="add-age-label" class="w-100 mt-3">
+            Age
+        </div>
+        <div id="add-age-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.age" class="form-control" type="number">
+        </div>
+        <div id="add-gender-label" class="w-100 mt-3">
+            Gender
+        </div>
+        <div id="add-gender-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.gender" class="form-control" type="text">
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Female</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">Male</label>
+        </div>
+        <div id="add-bodysize-label" class="w-100 mt-3">
+            Body frame size
+        </div>
+        <div id="add-bodysize-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.bodysize" class="form-control" type="text">
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Small</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">Medium</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">Larga</label>
+        </div>
+
+
+        <div id="add-bloodglucose-label" class="w-100 mt-3">
+            Blood glucose
+        </div>
+        <div id="add-bloodglucose-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.bloodGlucose" class="form-control" type="number">
+        </div>
+        <div id="add-insulinInfusion-label" class="w-100 mt-3">
+            Insulin infusion
+        </div>
+        <div id="add-insulinInfusion-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.insulinInfusion" class="form-control" type="number">
+        </div>
+        <div id="add-insulinConcentration-label" class="w-100 mt-3">
+            Insulin Concentration
+        </div>
+        <div id="add-insulinConcentration-label" class="w-100 mt-1">
+            <input [(ngModel)] = "user.insulinConcentration" class="form-control" type="number">
+        </div>
+        <div class="d-flex justify-content-center">
+            <button [disabled]="isDisabled()" class="btn btn-primary w-75 mt-5 text-center" (click)="onSaveClicked()">Save</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-danger w-75 mt-5 text-center" (click)="onCancelClicked()">Cancel</button>
+        </div>
+    </div>
+</div>
