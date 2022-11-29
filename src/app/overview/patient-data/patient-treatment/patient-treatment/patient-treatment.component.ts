@@ -44,9 +44,10 @@ export class PatientTreatmentComponent implements OnInit {
         fill: true,
         tension: 0.5,
         borderColor: 'black',
-        backgroundColor: 'rgba(255,0,0,0.3)'
-      }
-    ]
+        backgroundColor: 'rgba(0,0,0,0)',
+
+        }
+    ]    
   };
 
   public lineChartData_2: ChartConfiguration<'line'>['data'] = {
@@ -54,7 +55,7 @@ export class PatientTreatmentComponent implements OnInit {
     datasets: [
       {
         data: graphData.en.rate,
-        label: 'EN',
+        label: 'Enteral',
         fill: true,
         tension: 0.5,
         borderColor: 'black',
@@ -68,11 +69,13 @@ export class PatientTreatmentComponent implements OnInit {
     datasets: [
       {
         data: graphData.pn.rate,
-        label: 'PN',
+        label: 'Insulin sensitivity',
         fill: true,
         tension: 0.5,
-        borderColor: 'black',
-        backgroundColor: 'rgba(255,0,0,0.3)'
+        borderColor: 'rgba( 0, 255, 255, 1 )',
+        backgroundColor: 'rgba(0,0,0,0)',
+        pointBackgroundColor: 'black' 
+
       }
     ]
   };
@@ -82,11 +85,12 @@ export class PatientTreatmentComponent implements OnInit {
     datasets: [
       {
         data: graphData.u.rate,
-        label: 'Blood glucose',
+        label: 'Insulin',
         fill: true,
         tension: 0.5,
         borderColor: 'black',
-        backgroundColor: 'rgba(255,0,0,0.3)'
+        backgroundColor: 'rgba( 127, 255, 212, 1 )',
+        pointBackgroundColor: 'rgba( 127, 255, 212, 1 )'
       }
     ]
   };
